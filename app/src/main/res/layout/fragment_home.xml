@@ -1,0 +1,143 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="redtech.cancerclicker.HomeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/lblCellsPerTick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/disCells"
+            android:layout_centerHorizontal="true"
+            android:layout_column="0"
+            android:layout_marginTop="24dp"
+            android:layout_row="2"
+            android:layout_weight="1"
+            android:text="Cells per Tick"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="@android:color/black"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/lblCells"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_column="0"
+            android:layout_marginTop="20dp"
+            android:layout_row="1"
+            android:layout_weight="1"
+            android:text="Cells"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="@android:color/black"
+            android:textSize="39sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/disCells"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lblCells"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="6dp"
+            android:layout_weight="1"
+            android:text="0"
+            android:textAllCaps="false"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+            android:textColor="@android:color/black"
+            android:textSize="42sp" />
+
+        <TextView
+            android:id="@+id/disCellsPerTick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:text="0"
+            android:textAllCaps="false"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+            android:textColor="@android:color/black"
+            android:textSize="42sp"
+            android:layout_below="@+id/lblCellsPerTick"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/disMoney"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="1,000,000"
+            android:textAllCaps="false"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+            android:textColor="@android:color/black"
+            android:textSize="42sp"
+            android:layout_below="@+id/lblMoney"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="9dp" />
+
+        <TextView
+            android:id="@+id/disSpace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lblSpace"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="6dp"
+            android:layout_weight="1"
+            android:text="0/0"
+            android:textAllCaps="false"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+            android:textColor="@android:color/black"
+            android:textSize="42sp" />
+
+        <Button
+            android:id="@+id/btnCreate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/disSpace"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="76dp"
+            android:layout_weight="1"
+            android:text="Create"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/lblSpace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/disMoney"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="21dp"
+            android:layout_weight="1"
+            android:text="Space"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="@android:color/black"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/lblMoney"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/disCellsPerTick"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"
+            android:layout_weight="1"
+            android:text="Money"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="@android:color/black"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</FrameLayout>
