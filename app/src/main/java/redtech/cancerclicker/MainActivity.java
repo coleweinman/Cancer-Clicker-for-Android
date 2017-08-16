@@ -7,11 +7,13 @@ import android.support.design.widget.BottomNavigationView;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.MenuItem;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
+    public static String PACKAGE_NAME;
     private TextView mTextMessage;
     private TextView disCells;
 
@@ -53,6 +55,7 @@ public class MainActivity extends AppCompatActivity {
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
         navigation.setSelectedItemId(R.id.navigation_home);
         game.Main.Game.start(this);
+        PACKAGE_NAME = getApplicationContext().getPackageName();
 
     }
 

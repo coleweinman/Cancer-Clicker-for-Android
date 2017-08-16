@@ -86,7 +86,7 @@
             android:layout_marginTop="9dp" />
 
         <TextView
-            android:id="@+id/disSpace"
+            android:id="@+id/displaySpace"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/lblSpace"
@@ -103,7 +103,7 @@
             android:id="@+id/btnCreate"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/disSpace"
+            android:layout_below="@+id/displaySpace"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="76dp"
             android:layout_weight="1"

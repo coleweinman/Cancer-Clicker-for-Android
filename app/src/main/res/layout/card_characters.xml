@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardBox2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="12dp"
+    app:cardCornerRadius="6dp"
+    android:layout_margin="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+
+        <TextView
+            android:id="@+id/labelTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="Brian"
+            android:textColor="@android:color/black"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/displayCellCost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|right"
+            android:text="1,000"
+            android:textAlignment="textStart"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:layout_alignBottom="@+id/imageCells"
+            android:layout_toEndOf="@+id/imageCells" />
+
+        <TextView
+            android:id="@+id/displayMoneyTick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|right"
+            android:text="100/t"
+            android:textAlignment="textStart"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:layout_alignBottom="@+id/imageMoneyTick"
+            android:layout_toEndOf="@+id/imageMoneyTick" />
+
+        <TextView
+            android:id="@+id/displayCellsTick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|right"
+            android:text="100/t"
+            android:textAlignment="textStart"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:layout_alignBottom="@+id/imageCellTick"
+            android:layout_toEndOf="@+id/imageMoneyTick" />
+
+        <TextView
+            android:id="@+id/displayMoneyCost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageMoney"
+            android:layout_toEndOf="@+id/imageMoney"
+            android:gravity="center_vertical|right"
+            android:text="1,000"
+            android:textAlignment="textStart"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:layout_alignTop="@+id/imageMoney" />
+
+        <TextView
+            android:id="@+id/displaySpace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageSpace"
+            android:layout_alignTop="@+id/imageSpace"
+            android:layout_toEndOf="@+id/imageSpace"
+            android:gravity="center_vertical|right"
+            android:text="1"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/imageMoney"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_money_black_24dp"
+            android:layout_marginRight="2dp"
+            android:layout_below="@+id/imageSpace"
+            android:layout_alignStart="@+id/labelCost" />
+
+        <ImageView
+            android:id="@+id/imageMoneyTick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_money_black_24dp"
+            android:layout_marginRight="2dp"
+            android:layout_below="@+id/labelBenefits"
+            android:layout_alignStart="@+id/labelBenefits" />
+
+        <ImageView
+            android:id="@+id/imageCells"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="2dp"
+            app:srcCompat="@drawable/ic_cells_black_24dp"
+            android:layout_below="@+id/imageMoney"
+            android:layout_alignStart="@+id/labelCost" />
+
+        <ImageView
+            android:id="@+id/imageCellTick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="2dp"
+            app:srcCompat="@drawable/ic_cells_black_24dp"
+            android:layout_below="@+id/imageMoneyTick"
+            android:layout_alignStart="@+id/labelBenefits" />
+
+        <Button
+            android:id="@+id/buttonBuy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/picture"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:text="BUY" />
+
+        <ImageView
+            android:id="@+id/imageSpace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_space_black_24dp"
+            android:layout_below="@+id/labelCost"
+            android:layout_alignStart="@+id/labelCost" />
+
+        <ImageView
+            android:id="@+id/picture"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_below="@+id/labelTitle"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="6dp" />
+
+        <TextView
+            android:id="@+id/labelCost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cost"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:layout_alignBottom="@+id/labelTitle"
+            android:layout_marginRight="60dp"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:id="@+id/labelBenefits"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/labelTitle"
+            android:layout_alignParentStart="true"
+            android:layout_marginRight="130dp"
+            android:text="Benefits"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

@@ -1,17 +1,10 @@
 package game.Main;
-import android.app.Activity;
-import android.content.Context;
 import android.os.Handler;
-import android.util.Log;
 import android.widget.TextView;
-
-import org.w3c.dom.Text;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
-import java.util.concurrent.TimeUnit;
-import java.util.logging.Level;
 
 import game.Game.CharacterData;
 import game.Game.OperationData;
@@ -84,7 +77,7 @@ public class Game {
 			textView.setText(new ShortNumber(cellRate,false).toString());
 			textView = (TextView) mainActivity.getHomeFragment().getView().findViewById(R.id.disMoney);
 			textView.setText(new Double(money).toString());
-			textView = (TextView) mainActivity.getHomeFragment().getView().findViewById(R.id.disSpace);
+			textView = (TextView) mainActivity.getHomeFragment().getView().findViewById(R.id.displaySpace);
 			textView.setText(new Integer(space).toString()+"/"+new Integer(capacity).toString());
 		}
 		//TextView textView = (TextView) ((Activity)context).findViewById(R.id.disCells);

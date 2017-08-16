@@ -40,7 +40,7 @@ public class Operation implements Serializable {
 		capacity = i;
 	}
 
-	public int getCellIncrease() {
+	public int getCellRate() {
 		return cellRate;
 	}
 	

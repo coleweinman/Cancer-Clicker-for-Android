@@ -1,5 +1,7 @@
 package game.Game.Characters;
 
+import android.util.Log;
+
 import java.io.Serializable;
 
 import game.Game.Operations.Operation;
@@ -15,7 +17,7 @@ public class Character implements Serializable{
 	private boolean puppet = false;
 	private double superCellMult = 0;
 	private int space = 0;
-	private static Price price;
+	private Price price;
 	private int cellCost = 0;
 	private int moneyCost = 0;
 	private Operation operation;
@@ -79,7 +81,7 @@ public class Character implements Serializable{
 		return moneyRate;
 	}
 	
-	public static Price getPrice() {
+	public Price getPrice() {
 		return price;
 	}
 	

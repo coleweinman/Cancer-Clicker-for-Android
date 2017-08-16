@@ -1,5 +1,7 @@
 package game.Main;
 
+import android.util.Log;
+
 public class ShortNumber {
 	private long number;
 	private boolean really;
@@ -21,15 +23,15 @@ public class ShortNumber {
 	}
 	
 	public long getShort() {
-		if(number >= 1000000000) {
+		if(number >= 1000000000L) {
 			s = "b";
 			return number/1000000000;
 		}
-		if(number >= 1000000) {
+		if(number >= 1000000L) {
 			s = "m";
 			return number/1000000;
 		}
-		if(number >= 1000 && really) {
+		if(number >= 1000L && really) {
 			s = "k";
 			return number/1000;
 		}
